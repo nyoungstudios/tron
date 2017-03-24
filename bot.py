@@ -28,6 +28,8 @@ def select_move(grid_size, board_state, my_player_number, total_player_count):
   # TODO: Return "UP", "DOWN", "LEFT", or "RIGHT"   #
   #=================================================#
 
+
+
   print_board(board_state) # Print board for debugging
   print("")
 
