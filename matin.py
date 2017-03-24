@@ -1,1 +1,1 @@
-def moveViability():
+#def moveViability(myPosition, otherPosition):
