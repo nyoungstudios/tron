@@ -1,6 +1,6 @@
 from tron_connection import TronSocket
 
-secret = "MyPasswordHere" #TODO: SET SECRET HERE
+secret = "UUCRU1490393876171" #TODO: SET SECRET HERE
 
 '''
 Print the board
