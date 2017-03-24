@@ -1,8 +1,6 @@
 from tron_connection import TronSocket
-import matin as m
-import nathaniel as n
 
-secret = "UUCRU1490393876171" #TODO: SET SECRET HERE
+secret = "AHPHY1490394969629" #TODO: SET SECRET HERE
 
 '''
 Print the board
@@ -29,12 +27,8 @@ def select_move(grid_size, board_state, my_player_number, total_player_count):
   # TODO: Return "UP", "DOWN", "LEFT", or "RIGHT"   #
   #=================================================#
 
-
-
   print_board(board_state) # Print board for debugging
   print("")
-  v = n.findLocationHead(my_player_number, grid_size, board_state)
-  print("this is the return statement" + str(v))
 
   # Return "UP", "LEFT", "LEFT", or "RIGHT"
   return "UP"
