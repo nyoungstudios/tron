@@ -1,2 +1,2 @@
 # tron
-Purdue coding event to make tron game
+Purdue coding event to make tron game.
