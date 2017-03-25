@@ -32,7 +32,16 @@ def playerProb(playerPos, otherPos, grid_size, board_state):
     else:
         rightProb -= 500
 
+    if closestPlayer[0] < playerPos[0]:
+        upProb += 1
+    elif closestPlayer[0] > playerPos[0]:
+        downProb += 1
+    if closestPlayer[1] > playerPos[1]:
+        rightProb += 1
+    elif closestPlayer[1] < playerPos[1]:
+        leftProb += 1
 
+    return [upProb, leftProb, rightProb, downProb]
 
 #def moveProbability(myPosition, otherPosition, grid_size, board_state):
 #    leftProb = rightProb = upProb = downProb = 0
