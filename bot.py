@@ -29,10 +29,27 @@ def select_move(grid_size, board_state, my_player_number, total_player_count):
   # TODO: Return "UP", "DOWN", "LEFT", or "RIGHT"   #
   #=================================================#
 
+
+
+
+  currentLocationList = []
+  for x in range(int(total_player_count)):
+    currentPlayerNum = int(x + 1)
+    print(currentPlayerNum)
+    location = n.findLocationHead(str(currentPlayerNum), grid_size, board_state)
+    currentLocationList.insert(currentPlayerNum, location)
+    #print("this is the pos " + str(currentLocationList[currentPlayerNum-1]) + " This is x:")
+
+  ourCurrentLocation = currentLocationList[int(my_player_number) - 1]
+  otherLocation = currentLocationList
+  otherLocation.remove(ourCurrentLocation)
+
+
+
   print_board(board_state) # Print board for debugging
   print("")
-  v = n.findLocationHead(my_player_number, grid_size, board_state)
-  print("this is the return statement" + str(v))
+
+
 
   # Return "UP", "LEFT", "LEFT", or "RIGHT"
   return "UP"
